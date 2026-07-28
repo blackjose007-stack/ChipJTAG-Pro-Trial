@@ -1,5 +1,7 @@
 # ChipJTAG Pro Trial
 
+[繁體中文](README.md) | [English](README.en.md)
+
 > 在系統啟動以前，先看見硬體。
 
 > Release status：`v0.2.5` 公開預覽試用版。這不是正式商用版本，
