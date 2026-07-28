@@ -1,0 +1,17 @@
+.DS_Store
+Thumbs.db
+Desktop.ini
+*.7z
+*.exe
+*.msi
+*.zip
+*.cjwave
+*.cjworkspace
+*.bsdl
+*.bsd
+*.lpf
+*.qsf
+*.xdc
+*.vcd
+*.csv
+*.log

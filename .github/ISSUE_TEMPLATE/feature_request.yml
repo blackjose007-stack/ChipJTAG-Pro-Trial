@@ -1,0 +1,46 @@
+name: Feature request
+description: 提出可公開討論的功能需求
+title: "[Feature] "
+labels:
+  - enhancement
+body:
+  - type: markdown
+    attributes:
+      value: |
+        請描述使用情境與驗收結果。不要上傳 BSDL、LPF、XDC、QSF、schematic、
+        netlist、board profile、cable serial、waveform、diagnostics、terminal log
+        或任何客戶與未公開硬體資料。
+  - type: textarea
+    id: problem
+    attributes:
+      label: 使用情境與問題
+    validations:
+      required: true
+  - type: textarea
+    id: outcome
+    attributes:
+      label: 期望結果
+    validations:
+      required: true
+  - type: dropdown
+    id: area
+    attributes:
+      label: 功能區域
+      options:
+        - Adapter / Connection
+        - BSDL / Pin Mapping
+        - Waveform
+        - Recording / Export
+        - Terminal / Macro
+        - Diagnostics
+        - Documentation
+        - Other
+    validations:
+      required: true
+  - type: checkboxes
+    id: safety
+    attributes:
+      label: Product boundary
+      options:
+        - label: 此需求不要求燒錄、CPU debug、EXTEST 或 target output drive。
+          required: true
