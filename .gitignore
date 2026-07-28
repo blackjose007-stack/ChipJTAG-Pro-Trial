@@ -1,6 +1,8 @@
 .DS_Store
 Thumbs.db
 Desktop.ini
+.release-assets/
+.release-inspect/
 *.7z
 *.exe
 *.msi

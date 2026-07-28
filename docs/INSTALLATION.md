@@ -1,7 +1,7 @@
 # 安裝說明
 
-> 目前尚未發布 public Trial binary。以下安裝步驟只適用於未來由本倉庫
-> GitHub Releases 正式發布且通過簽章與雜湊驗證的版本。
+> `v0.2.5` 已透過官方 GitHub Releases 提供公開預覽。此版本尚未做
+> Authenticode 簽章，必須先核對 Release 公布的 SHA-256。
 
 ## 系統需求
 
@@ -31,7 +31,8 @@ C:\ChipJTAG-Pro-Trial
 
 ## 第一次啟動
 
-1. 從 GitHub Releases 下載正式 Trial 檔案。
+1. 從 [GitHub Releases](https://github.com/blackjose007-stack/ChipJTAG-Pro-Trial/releases)
+   下載官方 Trial 檔案。
 2. 依照 [下載與檔案驗證](DOWNLOAD_AND_VERIFY.md) 核對 SHA-256。
 3. 將封裝完整解壓縮。
 4. 執行 `chipjtag-pro.exe`。
@@ -44,8 +45,11 @@ Trial 從目前 Windows user/device 第一次成功初始化主視窗並建立�
 
 ## Windows 警告
 
-未來公開版本必須具有有效 Authenticode 簽章；Release notes 必須列出 signer。
-如果 Windows 顯示來源警告：
+`v0.2.5` 公開預覽版尚未簽章，因此 Windows 可能顯示 Unknown publisher 或
+SmartScreen 警告。先完成 SHA-256 比對，再決定是否在測試環境執行。
+
+未來正式商用版本必須具有有效 Authenticode 簽章；Release notes 必須列出
+signer。如果 Windows 顯示非預期來源警告：
 
 1. 先確認檔案只來自本倉庫的 GitHub Releases。
 2. 檢查 Windows `Digital Signatures` 及 signer。

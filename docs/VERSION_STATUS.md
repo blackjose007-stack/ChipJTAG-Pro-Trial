@@ -9,7 +9,10 @@ Updated: 2026-07-28
 - Platform：Windows 10 / Windows 11 x64
 - Trial：首次成功啟動後七天 Pro evaluation
 - Trial 不含：Advanced Automation、CLI/Tcl extension、Enterprise 功能
-- Public release status：pre-release documentation；尚無 public binary
+- Public release status：`trial-v0.2.5` 公開預覽試用版
+- Archive SHA-256：`FF5439E87F9B038229873863D6ED1BF3C7B18771178A0E50BFBA333D421EDFFB`
+- Source commit：`cb7bc9e7bb16`
+- Authenticode：`NotSigned`
 
 ## 已實作
 
@@ -28,12 +31,16 @@ Updated: 2026-07-28
 
 ## 軟體驗證
 
-2026-07-28 的 private development build 已通過 workspace test、Clippy、
-release build 及 Windows native UI regression。此結果尚未綁定任何 public
-archive 或 SHA-256，不可視為未來下載檔的驗證結果。軟體測試涵蓋
+2026-07-28 的 source commit `cb7bc9e7bb16` 已通過 workspace test、Clippy、
+release build 及 Windows native UI regression，並封裝為 SHA-256
+`FF5439E87F9B038229873863D6ED1BF3C7B18771178A0E50BFBA333D421EDFFB`
+的公開預覽 archive。軟體測試涵蓋
 BSDL/LPF parsing、chain parsing、FTDI/Quartus/Vivado
 資料處理、recording replay、固定 T0、空白 pre-observation 區、disk batching、
 terminal/macro 及 trial enforcement。
+
+公開預覽版尚未進行 Authenticode 簽章，也尚未完成下列實體硬體驗收。因此這次
+發布是受控試用入口，不是正式商用發布。
 
 ## 尚未宣稱完成
 

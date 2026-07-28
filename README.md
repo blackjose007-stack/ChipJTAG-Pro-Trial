@@ -2,8 +2,8 @@
 
 > 在系統啟動以前，先看見硬體。
 
-> Release status：目前是 pre-release documentation。尚未發布可執行檔，
-> 也尚未開放付費購買或私密檔案支援管道。
+> Release status：`v0.2.5` 公開預覽試用版。這不是正式商用版本，
+> AMD/Xilinx 與長時間波形錄製仍在實機驗證中。
 
 ChipJTAG Pro 是一套 Windows 原生、唯讀式 JTAG 硬體觀測與驗證工具。
 它將 JTAG scan-chain 資料轉換成可檢視、儲存與比較的波形及硬體證據。
@@ -45,7 +45,9 @@ ChipJTAG Pro 不會：
 - 執行方式：Windows 原生桌面程式，不使用 WebView 或 localhost UI
 - 試用：首次成功啟動後七天 Pro evaluation
 - Advanced Automation / CLI / Tcl extension：不包含於目前 Trial
-- Public binary：尚未發布
+- Public binary：`trial-v0.2.5` 公開預覽試用版
+- Archive SHA-256：`FF5439E87F9B038229873863D6ED1BF3C7B18771178A0E50BFBA333D421EDFFB`
+- Authenticode：尚未簽章；Windows 可能顯示 Unknown publisher
 
 版本狀態及驗證邊界請見 [版本資訊](docs/VERSION_STATUS.md)。
 
@@ -59,9 +61,18 @@ ChipJTAG Pro 不會：
 
 ## 下載
 
-Trial 安裝包尚未在此公開倉庫發布。正式公開時，通過 Authenticode
-驗證的下載檔、簽章者資訊與 SHA-256 會放在本倉庫的 GitHub Releases；
-不要從非官方轉傳連結取得執行檔。
+從現在起，請只從本倉庫的 [GitHub Releases](https://github.com/blackjose007-stack/ChipJTAG-Pro-Trial/releases)
+下載試用版。不要再使用聊天軟體、email 或網盤中的舊附件。
+
+目前公開預覽版：
+
+- [ChipJTAG Pro Trial v0.2.5](https://github.com/blackjose007-stack/ChipJTAG-Pro-Trial/releases/tag/trial-v0.2.5)
+- Windows x64 `.7z` 與對應 `.sha256`
+- 七天本機 Pro evaluation
+
+此預覽版尚未做 Authenticode 簽章。下載後必須先核對 SHA-256；雜湊不一致時
+不要解壓縮或執行。SHA-256 可確認下載內容與發布檔一致，但不能證明 publisher
+身分。
 
 詳見 [下載與檔案驗證](docs/DOWNLOAD_AND_VERIFY.md)。
 
@@ -90,6 +101,8 @@ Trial 安裝包尚未在此公開倉庫發布。正式公開時，通過 Authent
 | [疑難排解](docs/TROUBLESHOOTING.md) | 常見連線、BSDL 及 Vivado 問題 |
 | [安全與隱私](docs/PRIVACY_AND_SECURITY.md) | Read-only 邊界及資料處理原則 |
 | [回報格式](docs/FEEDBACK_TEMPLATE.md) | 可重現且不洩漏機密的回報內容 |
+| [三人試用驗證表](docs/PILOT_VALIDATION.md) | 統一記錄既有功能與實機結果 |
+| [v0.2.5 Release notes](docs/releases/v0.2.5.md) | 公開預覽檔案、雜湊與限制 |
 | [公開發布流程](docs/RELEASE_PROCESS.md) | 公開內容邊界、驗證與 Release 檔案 |
 
 ## 授權
