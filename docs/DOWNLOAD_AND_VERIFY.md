@@ -3,15 +3,15 @@
 Trial 透過本倉庫的 GitHub Releases 發布。從現在起，測試者應使用：
 
 - Releases 首頁：<https://github.com/blackjose007-stack/ChipJTAG-Pro-Trial/releases>
-- v0.2.5：<https://github.com/blackjose007-stack/ChipJTAG-Pro-Trial/releases/tag/trial-v0.2.5>
+- v0.2.8：<https://github.com/blackjose007-stack/ChipJTAG-Pro-Trial/releases/tag/trial-v0.2.8>
 
-`v0.2.5` 公開預覽檔案：
+`v0.2.8` 封閉測試檔案：
 
-- `ChipJTAG-Pro-native-v0.2.5-seven-day-trial.7z`
-- `ChipJTAG-Pro-native-v0.2.5-seven-day-trial.7z.sha256`
-- Archive size：`3,614,076` bytes
-- Archive SHA-256：`FF5439E87F9B038229873863D6ED1BF3C7B18771178A0E50BFBA333D421EDFFB`
-- Source commit：`cb7bc9e7bb16`
+- `ChipJTAG-Pro-native-v0.2.8-seven-day-trial.7z`
+- `ChipJTAG-Pro-native-v0.2.8-seven-day-trial.7z.sha256`
+- Archive size：`3,655,823` bytes
+- Archive SHA-256：`D45521B8C0A7363F63B74D7EC977AE177744B2A5CDEFEE85674E325B6707A8CB`
+- Source commit：`14110f77ebc1`
 - Package mode：`trial`
 - Runtime enforcement：`enforced`
 
@@ -23,7 +23,7 @@ Trial 透過本倉庫的 GitHub Releases 發布。從現在起，測試者應使
 下載後在 PowerShell 執行：
 
 ```powershell
-Get-FileHash .\ChipJTAG-Pro-native-v0.2.5-seven-day-trial.7z -Algorithm SHA256
+Get-FileHash .\ChipJTAG-Pro-native-v0.2.8-seven-day-trial.7z -Algorithm SHA256
 ```
 
 將輸出與 GitHub Release 提供的 SHA-256 完整比對。任何一個字元不相同，都不要
@@ -38,7 +38,7 @@ Get-AuthenticodeSignature .\chipjtag-pro.exe |
   Select-Object Status, StatusMessage, SignerCertificate
 ```
 
-`v0.2.5` 公開預覽版的預期結果是 `NotSigned`。Windows 可能顯示
+`v0.2.8` 封閉測試版的預期結果是 `NotSigned`。Windows 可能顯示
 Unknown publisher 或 SmartScreen 警告。這是目前預覽版的已知限制，不代表
 正式商用發布已達成簽章要求。
 
@@ -51,4 +51,4 @@ thumbprint 及 timestamp 必須與 Release 公布資料一致。SHA-256 只能�
 - GitHub repository owner 應為 `blackjose007-stack`。
 - Release 應來自 `ChipJTAG-Pro-Trial`。
 - 不接受聊天軟體、email 或第三方網盤中的未驗證重包。
-- `v0.2.5` 僅接受上述完整 SHA-256；不一致時停止執行並建立 Issue。
+- `v0.2.8` 僅接受上述完整 SHA-256；不一致時停止執行並建立 Issue。

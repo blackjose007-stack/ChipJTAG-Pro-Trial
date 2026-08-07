@@ -15,38 +15,38 @@ contain ChipJTAG Pro source code and is not an open-source software release.
 
 ## Current Release
 
-- Version: `v0.2.5`
+- Version: `v0.2.8`
 - Platform: Windows 10/11 x64
 - UI: Native Rust `eframe/egui` with OpenGL
 - Trial: Seven-day Pro evaluation from the first successful launch
-- Release type: Public preview
+- Release type: Closed Beta
 - Advanced Automation / CLI / Tcl extension: Not included
 - Authenticode: Not signed
 
 ## Download
 
 Download only from the official
-[ChipJTAG Pro Trial v0.2.5 Release](https://github.com/blackjose007-stack/ChipJTAG-Pro-Trial/releases/tag/trial-v0.2.5).
+[ChipJTAG Pro Closed Beta v0.2.8 Release](https://github.com/blackjose007-stack/ChipJTAG-Pro-Trial/releases/tag/trial-v0.2.8).
 Do not use old packages forwarded through chat, email, or third-party file
 sharing services.
 
 Files:
 
-- `ChipJTAG-Pro-native-v0.2.5-seven-day-trial.7z`
-- `ChipJTAG-Pro-native-v0.2.5-seven-day-trial.7z.sha256`
+- `ChipJTAG-Pro-native-v0.2.8-seven-day-trial.7z`
+- `ChipJTAG-Pro-native-v0.2.8-seven-day-trial.7z.sha256`
 
-Archive size: `3,614,076` bytes
+Archive size: `3,655,823` bytes
 
 SHA-256:
 
 ```text
-FF5439E87F9B038229873863D6ED1BF3C7B18771178A0E50BFBA333D421EDFFB
+D45521B8C0A7363F63B74D7EC977AE177744B2A5CDEFEE85674E325B6707A8CB
 ```
 
 Verify the downloaded archive in PowerShell:
 
 ```powershell
-Get-FileHash .\ChipJTAG-Pro-native-v0.2.5-seven-day-trial.7z -Algorithm SHA256
+Get-FileHash .\ChipJTAG-Pro-native-v0.2.8-seven-day-trial.7z -Algorithm SHA256
 ```
 
 Do not extract or run the package if any character in the hash is different.
@@ -118,7 +118,7 @@ same environment and evidence for each tester.
 - AMD/Xilinx physical cable and target acceptance is incomplete.
 - General stable `<= 1 ms` physical capture is not yet claimed.
 - Long-duration recording still requires physical endurance testing.
-- Multi-device AMD/Xilinx waveform capture is outside the v0.2.5 acceptance
+- Multi-device AMD/Xilinx waveform capture is outside the v0.2.8 acceptance
   scope.
 - The packaged developer README contains links to internal documents that are
   not included in the archive. Use this public repository as the current

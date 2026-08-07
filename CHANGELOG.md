@@ -1,5 +1,14 @@
 # Changelog
 
+## Closed Beta v0.2.8 - 2026-08-07
+
+- Added Device ID copy and signed, device-bound `.cjlicense` import.
+- Added waveform All/None selection, drag-to-zoom, and software edge trigger controls.
+- Stabilized Pin List scrolling to reduce intermittent red table-border flicker.
+- Bound the release archive to source commit `14110f77ebc1` and SHA-256
+  `D45521B8C0A7363F63B74D7EC977AE177744B2A5CDEFEE85674E325B6707A8CB`.
+- Kept signing secrets, customer licenses, source code, and private issuer tools out of the public package.
+
 ## Public preview v0.2.5 - 2026-07-28
 
 - Published one canonical GitHub Releases download path for all evaluators.
