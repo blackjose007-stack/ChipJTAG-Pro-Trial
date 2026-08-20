@@ -1,6 +1,6 @@
 # 安裝說明
 
-> `v0.2.8` 已透過官方 GitHub Releases 提供封閉測試。此版本尚未做
+> `v0.3.0` 已透過官方 GitHub Releases 提供封閉測試。此版本尚未做
 > Authenticode 簽章，必須先核對 Release 公布的 SHA-256。
 
 ## 系統需求
@@ -35,7 +35,7 @@ C:\ChipJTAG-Pro-Trial
    下載官方 Trial 檔案。
 2. 依照 [下載與檔案驗證](DOWNLOAD_AND_VERIFY.md) 核對 SHA-256。
 3. 將封裝完整解壓縮。
-4. 執行 `chipjtag-pro.exe`。
+4. 執行 `ChipJTAG-Pro.exe`。
 5. 開啟 `Settings > Account & License`。
 6. 確認畫面顯示七天 Trial 的剩餘時間與截止時間。
 
@@ -45,7 +45,7 @@ Trial 從目前 Windows user/device 第一次成功初始化主視窗並建立�
 
 ## Windows 警告
 
-`v0.2.8` 封閉測試版尚未簽章，因此 Windows 可能顯示 Unknown publisher 或
+`v0.3.0` 封閉測試版尚未簽章，因此 Windows 可能顯示 Unknown publisher 或
 SmartScreen 警告。先完成 SHA-256 比對，再決定是否在測試環境執行。
 
 未來正式商用版本必須具有有效 Authenticode 簽章；Release notes 必須列出

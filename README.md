@@ -4,7 +4,7 @@
 
 > 在系統啟動以前，先看見硬體。
 
-> Release status：`v0.2.8` 封閉測試版。這不是正式商用版本，
+> Release status：`v0.3.0` 封閉測試版。這不是正式商用版本，
 > AMD/Xilinx 與長時間波形錄製仍在實機驗證中。
 
 ChipJTAG Pro 是一套 Windows 原生、唯讀式 JTAG 硬體觀測與驗證工具。
@@ -30,6 +30,10 @@ ChipJTAG Pro 用於：
 - 以 Time/Div、水平時間軸、游標及 scan history 檢視量測結果。
 - 匯出受方案限制的 Snapshot、VCD、CSV、Evidence 與 Diagnostics。
 - 使用原生 Serial Terminal、Tera Term 相容巨集子集及 terminal log。
+- 從主畫面 Packages 目錄安裝或移除隨附的 CPU Boundary I/O 與
+  Waveform Compare Closed Beta 套件。
+- 在 CPU 工程驗證畫面查看 JTAG TX/RX/CHECK 階段、bit 數、IDCODE
+  及成功/失敗結果。
 
 ChipJTAG Pro 不會：
 
@@ -41,14 +45,14 @@ ChipJTAG Pro 不會：
 
 ## 目前版本
 
-- Trial 文件版本：`v0.2.8`
+- Trial 文件版本：`v0.3.0`
 - 平台：Windows 10 / Windows 11 x64
 - UI：Rust `eframe/egui` + native OpenGL
 - 執行方式：Windows 原生桌面程式，不使用 WebView 或 localhost UI
 - 試用：首次成功啟動後七天 Pro evaluation
 - Advanced Automation / CLI / Tcl extension：不包含於目前 Trial
-- Public binary：`trial-v0.2.8` 封閉測試版
-- Archive SHA-256：`D45521B8C0A7363F63B74D7EC977AE177744B2A5CDEFEE85674E325B6707A8CB`
+- Public binary：`trial-v0.3.0` 封閉測試版
+- Archive SHA-256：`3007D165F6257D30FE86A31F690F187D4AA7BEADA1136AC5502E8D962BE96569`
 - Authenticode：尚未簽章；Windows 可能顯示 Unknown publisher
 
 版本狀態及驗證邊界請見 [版本資訊](docs/VERSION_STATUS.md)。
@@ -68,8 +72,8 @@ ChipJTAG Pro 不會：
 
 目前封閉測試版：
 
-- [ChipJTAG Pro Closed Beta v0.2.8](https://github.com/blackjose007-stack/ChipJTAG-Pro-Trial/releases/tag/trial-v0.2.8)
-- Windows x64 `.7z` 與對應 `.sha256`
+- [ChipJTAG Pro Closed Beta v0.3.0](https://github.com/blackjose007-stack/ChipJTAG-Pro-Trial/releases/tag/trial-v0.3.0)
+- Windows x64 `.7z`、直接更新用 `.exe` 與各自對應的 `.sha256`
 - 七天本機 Pro evaluation
 - 可匯入另行簽發、綁定 Device ID 與到期日的 `.cjlicense`
 
@@ -99,13 +103,13 @@ ChipJTAG Pro 不會：
 | [試用操作 SOP](docs/TRIAL_SOP.md) | 第一次連線、掃描及停止作業 |
 | [硬體支援範圍](docs/SUPPORTED_HARDWARE.md) | Adapter、工具、已驗證程度 |
 | [波形操作說明](docs/WAVEFORM_WORKFLOW.md) | Time/Div、游標、錄製與載入 |
-| [版本資訊](docs/VERSION_STATUS.md) | v0.2.8 功能及驗證邊界 |
+| [版本資訊](docs/VERSION_STATUS.md) | v0.3.0 功能及驗證邊界 |
 | [已知限制](docs/KNOWN_LIMITATIONS.md) | 尚未完成或需實機確認的項目 |
 | [疑難排解](docs/TROUBLESHOOTING.md) | 常見連線、BSDL 及 Vivado 問題 |
 | [安全與隱私](docs/PRIVACY_AND_SECURITY.md) | Read-only 邊界及資料處理原則 |
 | [回報格式](docs/FEEDBACK_TEMPLATE.md) | 可重現且不洩漏機密的回報內容 |
 | [三人試用驗證表](docs/PILOT_VALIDATION.md) | 統一記錄既有功能與實機結果 |
-| [v0.2.8 Release notes](docs/releases/v0.2.8.md) | 封閉測試檔案、更新、雜湊與限制 |
+| [v0.3.0 Release notes](docs/releases/v0.3.0.md) | 封閉測試檔案、更新、雜湊與限制 |
 | [公開發布流程](docs/RELEASE_PROCESS.md) | 公開內容邊界、驗證與 Release 檔案 |
 
 ## 授權

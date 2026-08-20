@@ -1,13 +1,15 @@
 {
   "channel": "stable",
-  "version": "0.2.8",
+  "version": "0.3.0",
   "build_flavor": "seven-day-trial",
-  "release_date": "2026-08-07T02:57:38Z",
+  "release_date": "2026-08-20T06:47:20Z",
   "min_os_version": "windows-x86_64",
-  "download_url": "https://github.com/blackjose007-stack/ChipJTAG-Pro-Trial/releases/download/trial-v0.2.8/ChipJTAG-Pro-v0.2.8-x86_64.exe",
-  "sha256": "11bc3faa5767b720e7d70f41598c18474069688fa3cb16d14741b8eec9617c71",
+  "download_url": "https://github.com/blackjose007-stack/ChipJTAG-Pro-Trial/releases/download/trial-v0.3.0/ChipJTAG-Pro-v0.3.0-x86_64.exe",
+  "sha256": "31ec3a4e8a5fe7bb34a17fba77506d0b15c84461fcb1012c72dc5c711e87eb5c",
   "release_notes": [
-    "Stable closed-beta updater bootstrap asset.",
+    "Closed Beta v0.3.0 with bundled CPU Boundary I/O and Waveform Compare packages.",
+    "Engineering JTAG transaction logs show successful and failed stages, directions, bit counts and IDCODEs.",
+    "Settings updater verifies this direct EXE SHA-256 before replacement.",
     "Seven-day local Pro evaluation on Windows x64.",
     "Unsigned preview: Windows may show Unknown publisher."
   ]

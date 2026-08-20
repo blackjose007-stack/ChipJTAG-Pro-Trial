@@ -15,7 +15,7 @@ contain ChipJTAG Pro source code and is not an open-source software release.
 
 ## Current Release
 
-- Version: `v0.2.8`
+- Version: `v0.3.0`
 - Platform: Windows 10/11 x64
 - UI: Native Rust `eframe/egui` with OpenGL
 - Trial: Seven-day Pro evaluation from the first successful launch
@@ -26,27 +26,29 @@ contain ChipJTAG Pro source code and is not an open-source software release.
 ## Download
 
 Download only from the official
-[ChipJTAG Pro Closed Beta v0.2.8 Release](https://github.com/blackjose007-stack/ChipJTAG-Pro-Trial/releases/tag/trial-v0.2.8).
+[ChipJTAG Pro Closed Beta v0.3.0 Release](https://github.com/blackjose007-stack/ChipJTAG-Pro-Trial/releases/tag/trial-v0.3.0).
 Do not use old packages forwarded through chat, email, or third-party file
 sharing services.
 
 Files:
 
-- `ChipJTAG-Pro-native-v0.2.8-seven-day-trial.7z`
-- `ChipJTAG-Pro-native-v0.2.8-seven-day-trial.7z.sha256`
+- `ChipJTAG-Pro-native-v0.3.0-seven-day-trial.7z`
+- `ChipJTAG-Pro-native-v0.3.0-seven-day-trial.7z.sha256`
+- `ChipJTAG-Pro-v0.3.0-x86_64.exe`
+- `ChipJTAG-Pro-v0.3.0-x86_64.exe.sha256`
 
-Archive size: `3,655,823` bytes
+Archive size: `4,825,253` bytes
 
 SHA-256:
 
 ```text
-D45521B8C0A7363F63B74D7EC977AE177744B2A5CDEFEE85674E325B6707A8CB
+3007D165F6257D30FE86A31F690F187D4AA7BEADA1136AC5502E8D962BE96569
 ```
 
 Verify the downloaded archive in PowerShell:
 
 ```powershell
-Get-FileHash .\ChipJTAG-Pro-native-v0.2.8-seven-day-trial.7z -Algorithm SHA256
+Get-FileHash .\ChipJTAG-Pro-native-v0.3.0-seven-day-trial.7z -Algorithm SHA256
 ```
 
 Do not extract or run the package if any character in the hash is different.
@@ -67,6 +69,11 @@ published artifact; it does not authenticate the publisher.
 - Exports trial-limited Snapshot, CSV, VCD, Evidence, and Diagnostics files.
 - Includes a native serial terminal, a supported Tera Term macro subset, and
   terminal log recording.
+- Includes a visible Packages catalog with locally installable/removable CPU
+  Boundary I/O and Waveform Compare Closed Beta packages.
+- Shows bounded CPU engineering JTAG TX/RX/CHECK stages, bit counts, IDCODEs,
+  and both successful and failed outcomes in the local log.
+- Keeps software updates in Settings and verifies the downloaded EXE SHA-256.
 
 ## What It Does Not Do
 
@@ -118,11 +125,11 @@ same environment and evidence for each tester.
 - AMD/Xilinx physical cable and target acceptance is incomplete.
 - General stable `<= 1 ms` physical capture is not yet claimed.
 - Long-duration recording still requires physical endurance testing.
-- Multi-device AMD/Xilinx waveform capture is outside the v0.2.8 acceptance
+- Multi-device AMD/Xilinx waveform capture is outside the v0.3.0 acceptance
   scope.
-- The packaged developer README contains links to internal documents that are
-  not included in the archive. Use this public repository as the current
-  source for installation, validation, and troubleshooting guidance.
+- CPU Boundary I/O remains an engineering preview with zero officially
+  supported CPU models. Local BSDL load or capture is not a model-support claim.
+- The bundled package catalog does not download payloads from the network.
 
 ## Feedback and Data Safety
 

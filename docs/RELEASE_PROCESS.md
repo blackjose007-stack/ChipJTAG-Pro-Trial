@@ -17,6 +17,7 @@ ChipJTAG Pro 原始碼與私有開發歷史保留在獨立的 private repository
 
 - Rust、C/C++、JavaScript、TypeScript、Python 或其他原始碼。
 - 私有 repository 的 branch、commit history、patch、build log 或內部 roadmap。
+  Release provenance 可只列出對應的單一 source commit ID。
 - BSDL、LPF、XDC、QSF、netlist、schematic、board profile 或客戶 waveform。
 - License key、signing key、certificate、gateway 設定、SMTP/OAuth 資料或測試序號。
 - 本機 username/path、cable serial、客戶/公司名稱及未公開 device ID。
@@ -30,13 +31,16 @@ ChipJTAG Pro 原始碼與私有開發歷史保留在獨立的 private repository
 2. Workspace tests、Clippy、release build 與 Windows UI smoke test 通過。
 3. Trial build 使用 production-intended runtime enforcement，不是 internal audit build。
 4. 封裝只含執行所需檔案、公開說明及第三方 notice。
-5. 在乾淨 Windows user 或 VM 驗證第一次啟動、Trial deadline、關閉後重開及到期邊界。
-6. 以有效 Authenticode certificate 及可信任 timestamp 簽署 executable，並記錄
-   signer subject、certificate thumbprint、timestamp authority 與驗證結果。
-7. 至少完成一組 cable/driver/tool/target/BSDL known-good physical acceptance matrix。
+5. Closed Beta 至少完成最終 EXE Windows 啟動 smoke；乾淨 user/VM 的
+   Trial deadline、重開及到期邊界未完成時必須列為限制。
+6. 正式商用 GA 必須有 Authenticode certificate 與可信任 timestamp。
+   Closed Beta 可在 Release notes 明確列出 `NotSigned` 及 Unknown publisher 風險後發布。
+7. 實體 known-good matrix 未完成的 backend/套件必須標示 Preview，不得宣稱
+   正式型號支援或通用硬體驗證已完成。
 8. 依 release 目標完成其他 adapter/target smoke test；未完成項目標示為 Preview。
 9. 確認 temporary waveform cache 的正常清除與 crash-recovery 清理程序。
-10. 公布付費 activation 路徑、法律權利人及私密支援管道。
+10. 列出授權與 support/debug 管道的實際啟用條件；未設定的
+    endpoint/token 不得宣稱為可用公開支援服務。
 11. 確認程式內版本、Release tag、archive filename、sidecar 與 release notes
     使用同一版本，再對最終 `.7z` 計算 SHA-256。
 12. 以敏感資訊掃描確認文件、檔名與封裝內沒有 private data。
@@ -49,8 +53,10 @@ ChipJTAG Pro 原始碼與私有開發歷史保留在獨立的 private repository
 ## 檔名規則
 
 ```text
-ChipJTAG-Pro-<version>-windows-x64-trial.7z
-ChipJTAG-Pro-<version>-windows-x64-trial.7z.sha256
+ChipJTAG-Pro-native-v<version>-seven-day-trial.7z
+ChipJTAG-Pro-native-v<version>-seven-day-trial.7z.sha256
+ChipJTAG-Pro-v<version>-x86_64.exe
+ChipJTAG-Pro-v<version>-x86_64.exe.sha256
 ```
 
 Release tag：

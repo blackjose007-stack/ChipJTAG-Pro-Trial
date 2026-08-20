@@ -9,8 +9,8 @@
 - Trial 到期後仍可載入及檢視既有 waveform，Free limited Snapshot 仍依當時
   版本的 Free entitlement 提供。
 - Advanced Automation、CLI/Tcl extension 及 Enterprise 功能不包含於 Trial。
-- 付費購買與 activation 路徑尚未公開；public binary 發布前必須補齊。
-- 目前沒有 public Trial binary；第一個公開版本必須具有有效 Authenticode 簽章。
+- 付費購買流程尚未公開；離線 `.cjlicense` 由受控流程另行簽發。
+- 公開 Closed Beta binary 尚未做 Authenticode 簽章；這不等於已達正式商用 GA gate。
 
 ## Hardware
 
@@ -18,6 +18,8 @@
 - AMD/Xilinx Platform Cable 與 Digilent backend 仍需連接實體 target 完成 acceptance。
 - 複雜 multi-device chain 可能需要額外 chain routing 支援。
 - 部分 BSDL 未提供可安全使用的 identity 或 observation 資訊。
+- CPU Boundary I/O 目前是本機工程驗證，正式支援型號數為 0。
+- CPU 與 Waveform Compare 是隨附套件；套件目錄尚未提供網路下載商店。
 - ChipJTAG Pro 不會主動驅動 output，無法取代完整產線 Boundary Scan Tester。
 
 ## Waveform 與效能

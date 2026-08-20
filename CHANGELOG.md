@@ -1,5 +1,23 @@
 # Changelog
 
+## Closed Beta v0.3.0 - 2026-08-20
+
+- Added a visible Packages catalog with install/remove testing for the bundled
+  CPU Boundary I/O and Waveform Compare packages.
+- Added a split upper/lower waveform comparison window with independent
+  navigation and optional marker/label alignment lock.
+- Added CPU engineering JTAG logs that show successful and failed transaction
+  stages, TX/RX/CHECK direction, bit counts, topology and observed IDCODEs.
+- Added Settings-based update checks and SHA-256-verified EXE replacement.
+- Kept input traces blank before observation and decoded BSDL `output3`
+  high-impedance control as a dashed `Z` trace.
+- Added bounded Case-scoped support submission/chat UI for configured support
+  endpoints; no endpoint, token, BSDL or customer identifier is embedded.
+- Bound the release archive to source commit `0f762447308f` and SHA-256
+  `3007D165F6257D30FE86A31F690F187D4AA7BEADA1136AC5502E8D962BE96569`.
+- Kept Rust source, Cargo manifests, private repository history, signing seeds,
+  customer licenses, BSDL and waveform captures out of the public package.
+
 ## Closed Beta v0.2.8 - 2026-08-07
 
 - Added Device ID copy and signed, device-bound `.cjlicense` import.

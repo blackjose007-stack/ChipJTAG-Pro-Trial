@@ -40,12 +40,11 @@ Trial 重置方式。
 
 ## 網路行為
 
-產品設計包含可選的 commerce/licensing gateway、瀏覽器登入及 localhost OAuth
-callback；test-license 通知也可能在設定 gateway 後送出。硬體掃描與波形檢視
-本身不應被宣稱為完全離線授權流程。由於目前沒有 public binary，每個 Release
-必須在下載頁列出實際 endpoint owner、觸發條件、傳送欄位、保留政策及離線行為，
-並以封裝驗證確認 waveform、BSDL、pin assignment 與 terminal log 不會被 commerce
-流程上傳。未完成這份揭露前不得發布 binary。
+產品設計包含可選的 commerce/licensing gateway、瀏覽器登入、localhost OAuth
+callback、Settings 更新檢查，以及 Case-scoped support submission/chat UI。`v0.3.0`
+沒有內嵌 support endpoint 或 bearer token；未由操作者設定時，該支援通道不會送出
+資料。Stable updater 只讀取本公開倉庫的 manifest 與 EXE，下載後核對
+SHA-256。硬體掃描與波形檢視本身不應被宣稱為完全離線授權流程。
 
 公開回報前，應移除：
 
@@ -57,13 +56,14 @@ callback；test-license 通知也可能在設定 gateway 後送出。硬體掃�
 
 ## 公開 Issue
 
-GitHub Issues 是公開區域。只可提交可公開的最小重現資訊。目前尚未建立 private
-support upload channel；若問題必須依賴客戶機密檔案，請不要在本倉庫建立含附件
-的 Issue，也不要傳送資料。Public binary 發布前必須先公布私密支援管道、負責人
-與回應範圍。
+GitHub Issues 是公開區域，只可提交可公開的最小重現資訊。程式內的
+support UI 不是任意遠端控制管道；只能送出格式限制的 Case 與對話，且必須由
+操作者設定已核准 endpoint/token。若問題必須依賴客戶機密檔案，請依雙方
+核准的私密流程處理，不要上傳到公開 Issue。
 
 ## 執行檔來源
 
-目前沒有 public Trial binary。未來只從本倉庫 GitHub Releases 下載具有有效
-Authenticode 簽章的 Trial，確認 signer 並核對 SHA-256。不要執行第三方重包、
-不明 email 附件或無法核對簽章/hash 的版本。
+只從本倉庫 GitHub Releases 下載 Trial，核對公布的 SHA-256。`v0.3.0`
+封閉測試版未簽章，預期 Authenticode 為 `NotSigned`；這是已公開的限制，不是
+正式商用簽章 gate 已完成。不要執行第三方重包、不明 email 附件或無法核對
+hash 的版本。
