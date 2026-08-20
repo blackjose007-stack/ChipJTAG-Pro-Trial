@@ -1,0 +1,14 @@
+{
+  "channel": "stable",
+  "version": "0.2.8",
+  "build_flavor": "seven-day-trial",
+  "release_date": "2026-08-07T02:57:38Z",
+  "min_os_version": "windows-x86_64",
+  "download_url": "https://github.com/blackjose007-stack/ChipJTAG-Pro-Trial/releases/download/trial-v0.2.8/ChipJTAG-Pro-v0.2.8-x86_64.exe",
+  "sha256": "11bc3faa5767b720e7d70f41598c18474069688fa3cb16d14741b8eec9617c71",
+  "release_notes": [
+    "Stable closed-beta updater bootstrap asset.",
+    "Seven-day local Pro evaluation on Windows x64.",
+    "Unsigned preview: Windows may show Unknown publisher."
+  ]
+}
